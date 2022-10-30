@@ -8,7 +8,9 @@ const Menubar = () => {
   return (
     <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
       <Container>
-        <Navbar.Brand href='#home'>CodersGift</Navbar.Brand>
+        <Navbar.Brand as={Link} href='/'>
+          CodersGift
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ms-auto'>
@@ -17,6 +19,9 @@ const Menubar = () => {
             </Nav.Link>
             <Nav.Link as={Link} href='/user'>
               User List
+            </Nav.Link>
+            <Nav.Link as={Link} href='/blogs'>
+              Blogs
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
